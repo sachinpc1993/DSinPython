@@ -3,6 +3,7 @@ from Stack import Stack
 from Queue import Queue
 from DQueue import DQueue
 from LinkedList import Node
+from LinkedList import UnorderedList
 
 # Stack
 def testStack():
@@ -59,9 +60,33 @@ def testDQueue():
     print(a.isEmpty())
 
 def testLinkedList():
-    node1 = Node()
-    print(node1)
+    node1 = Node(None)
+    print(node1.next)
+    print(node1.data)
 
+    node2 = Node(None)
+    node1.setNext(node2)
+
+    print(node2)
+    print(node1.getNext())
+
+    if node2 == node1.getNext():
+        print("Linked List successfully created")
+    else:
+        print("An error in the node creation")
+
+    mylist = UnorderedList()
+    mylist.addElements(31)
+    mylist.addElements(77)
+    mylist.addElements(17)
+    mylist.addElements(93)
+    mylist.addElements(26)
+    mylist.addElements(54)
+
+    mylist.search(31)
+    mylist.search(54)
+
+    mylist.remove(54)
 
 
 
