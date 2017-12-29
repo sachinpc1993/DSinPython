@@ -2,13 +2,14 @@
 from Stack import Stack
 from Queue import Queue
 from DQueue import DQueue
+from LinkedList import Node
 
 # Stack
 def testStack():
     a = Stack()
 
     #Testing isEmpty()
-    print a.isEmpty()
+    print(a.isEmpty())
 
     #Testing Push
     for i in range(10):
@@ -20,13 +21,13 @@ def testStack():
     a.displayStack()
 
     #Testing isEmpty()
-    print a.isEmpty()
+    print(a.isEmpty())
 
 def testQueue():
     a = Queue()
 
     #Testing isEmpty()
-    print a.isEmpty()
+    print(a.isEmpty())
 
     #Testing adding
     for i in range(10):
@@ -41,7 +42,7 @@ def testDQueue():
     a = DQueue()
 
     #Testing isEmpty()
-    print a.isEmpty()
+    print(a.isEmpty())
 
     a.addBegin(0)
     a.displayDQueue()
@@ -55,8 +56,17 @@ def testDQueue():
     a.displayDQueue()
 
     #Testing isEmpty()
-    print a.isEmpty()
+    print(a.isEmpty())
+
+def testLinkedList():
+    node1 = Node()
+    print(node1)
+
+
+
+
 
 #testStack()
 #testQueue()
 #testDQueue()
+testLinkedList()

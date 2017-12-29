@@ -13,4 +13,4 @@ class Queue:
         self.queue.pop()
 
     def displayQueue(self):
-        print self.queue
+        print(self.queue)

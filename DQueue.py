@@ -19,4 +19,4 @@ class DQueue:
         self.dequeue.pop()
 
     def displayDQueue(self):
-        print self.dequeue
+        print(self.dequeue)

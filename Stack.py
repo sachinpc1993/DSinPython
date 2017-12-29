@@ -16,4 +16,4 @@ class Stack:
         return len(self.items)
 
     def displayStack(self):
-        print self.items
+        print(self.items)
